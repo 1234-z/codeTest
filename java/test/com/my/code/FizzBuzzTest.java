@@ -18,6 +18,7 @@ public class FizzBuzzTest {
     @Test
     public void testFizzBuzzForNumberDivisibleByThreeAndFive() {
         assertEquals("FizzBuzz", FizzBuzz.fizzBuzz(15));
+        assertEquals("FizzBuzz", FizzBuzz.fizzBuzz(-15));
     }
 
     /**
@@ -28,6 +29,8 @@ public class FizzBuzzTest {
     public void testFizzForNumberDivisibleByThree() {
         assertEquals("Fizz", FizzBuzz.fizzBuzz(3));
         assertEquals("Fizz", FizzBuzz.fizzBuzz(9));
+        assertEquals("Fizz", FizzBuzz.fizzBuzz(-3));
+        assertEquals("Fizz", FizzBuzz.fizzBuzz(-9));
     }
 
     /**
@@ -38,6 +41,8 @@ public class FizzBuzzTest {
     public void testBuzzForNumberDivisibleByFive() {
         assertEquals("Buzz", FizzBuzz.fizzBuzz(5));
         assertEquals("Buzz", FizzBuzz.fizzBuzz(10));
+        assertEquals("Buzz", FizzBuzz.fizzBuzz(-5));
+        assertEquals("Buzz", FizzBuzz.fizzBuzz(-10));
     }
 
     /**
@@ -47,6 +52,7 @@ public class FizzBuzzTest {
     @Test
     public void testEmptyStringForNumberNotDivisibleByThreeOrFive() {
         assertEquals("", FizzBuzz.fizzBuzz(7));
+        assertEquals("", FizzBuzz.fizzBuzz(-7));
     }
 
     /**

@@ -4,6 +4,7 @@ public class FizzBuzz {
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
     private static final String FIZZBUZZ = "FizzBuzz";
+    private static final String EMPTY = "";
 
     /**
      * Determines the string representation of a given number according to FizzBuzz rules.
@@ -18,7 +19,7 @@ public class FizzBuzz {
         // Check if the number is 0 or not divisible by either 3 or 5
         if (number == 0 || (number % 3 != 0 && number % 5 != 0)) {
             // For numbers that are not multiples of both three and five
-            return "";
+            return EMPTY;
         } else if (number % 3 == 0) {
             // Check if the number is divisible by 5 in addition to 3
             if (number % 5 == 0) {
