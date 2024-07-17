@@ -1,12 +1,11 @@
-package test.com.my.code;
+package com.my.code;
 
-import com.my.code.FizzBuzz;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * Test class for the fizzBuzz function. This class contains several test cases to ensure
+ * Test class for the fizzBuzz function. This class contains several test.csv cases to ensure
  * that the fizzBuzz function behaves as expected for various input values.
  */
 public class FizzBuzzTest {
